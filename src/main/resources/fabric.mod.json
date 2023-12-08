@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "fenris_utils",
+  "version": "${version}",
+  "name": "Fenris' Utils",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/jonas/untitled2"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/fenris_utils/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "me.ffox86.fenris_utils.client.TooManyAttributesClient"
+    ],
+    "main": [
+      "me.ffox86.fenris_utils.FenrisUtils"
+    ]
+  },
+  "mixins": [
+    "fenris_utils.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
