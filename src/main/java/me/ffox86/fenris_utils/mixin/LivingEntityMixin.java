@@ -43,14 +43,14 @@ abstract class LivingEntityMixin extends Entity {
     private float addFireResistance(float b, DamageSource damageSource) {
         if (damageSource.isFire()) {
             return b * (1 - (float)((LivingEntity)(Object)this).getAttribute(
-                    CustomAttributes.all.get("fire_resistance")).getValue()
+                    CustomAttributes.FIRE_RESISTANCE.attribute).getValue()
             );
         }
         return b;
     }
 
     public boolean fireImmune() {
-        if (((LivingEntity)(Object)this).getAttribute(CustomAttributes.all.get("fire_resistance")).getValue() >= 1) {
+        if (((LivingEntity)(Object)this).getAttribute(CustomAttributes.FIRE_RESISTANCE.attribute).getValue() >= 1) {
             return true;
         }
         return this.getType().fireImmune();

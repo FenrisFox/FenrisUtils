@@ -13,7 +13,7 @@
   "environment": "*",
   "entrypoints": {
     "client": [
-      "me.ffox86.fenris_utils.client.TooManyAttributesClient"
+      "me.ffox86.fenris_utils.client.FenrisUtilsClient"
     ],
     "main": [
       "me.ffox86.fenris_utils.FenrisUtils"
